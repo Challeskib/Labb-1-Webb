@@ -1,58 +1,54 @@
- 
-  /* Style the main header */
-  header {
-	background-color: #2c3e50;
-	color: #fff;
-	padding: 20px;
-  }
-
-  /* Style the main content section */
-  main {
-	max-width: 960px;
-	margin: 0 auto;
-	padding: 20px;
-	display: flex;
-	flex-wrap: wrap;
-	justify-content: space-between;
-	align-items: center; /* align items  */
-	justify-content: center; /* horizontally center items */
-
-  }
-  
-  /* Style the profile picture */
-  img {
-	width: 60%;
-	
-	border-radius: 50%;
-	margin: 100px 0;
-	flex-shrink: 0;
+/* Style the main header */
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px;
 }
-  
-  /* Style the quote section */
-  .quote {
-	width: 100%;
-	margin-top: 20px;
-	flex-grow: 1; /* make the quote section fill remaining space */
+
+/* Style the main content section */
+main {
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center; /* align items  */
+  justify-content: center; /* horizontally center items */
+}
+
+/* Style the profile picture */
+img {
+  width: 60%;
+
+  border-radius: 50%;
+  margin: 100px 0;
+  flex-shrink: 0;
+}
+
+/* Style the quote section */
+.quote {
+  width: 100%;
+  margin-top: 20px;
+  flex-grow: 1; /* make the quote section fill remaining space */
+}
+
+.quote p {
+  font-size: 24px;
+  font-style: italic;
+  text-align: center;
+  margin: 0; /* remove default margin for paragraphs */
+}
+
+/* Add responsive styles for mobile devices */
+@media (max-width: 767px) {
+  main {
+    flex-direction: column;
   }
-  
+  img {
+    margin: 20px auto;
+  }
   .quote p {
-	font-size: 24px;
-	font-style: italic;
-	text-align: center;
-	margin: 0; /* remove default margin for paragraphs */
+    font-size: 20px;
   }
-  
-  
-  /* Add responsive styles for mobile devices */
-  @media (max-width: 767px) {
-	main {
-	  flex-direction: column;
-	}
-	img {
-	  margin: 20px auto;
-	}
-	.quote p {
-	  font-size: 20px;
-	}
-  }
-  
+}

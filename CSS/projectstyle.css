@@ -1,14 +1,122 @@
-
 /* Set default font and background colors for the page */
 body {
-	font-family: 'Helvetica Neue', sans-serif;
-	background-color: #f5f5f5;
-	color: #c2c2c2;
+  font-family: "Helvetica Neue", sans-serif;
+  background-color: #f5f5f5;
+  color: #c2c2c2;
+}
+
+/* Style the main header */
+header {
+  background-color: #2c3e50;
+  color: #fff;
+  padding: 20px;
+}
+
+/* h1 {
+  text-align: center;
+  font-family: Tahoma, Arial, sans-serif;
+  color: #06d85f;
+  margin: 40px 0;
+} */
+
+main ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 0;
+  list-style: none;
+}
+
+main li {
+  flex-basis: 30%;
+}
+
+.box {
+  width: 50%;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.2);
+  padding: 70px;
+  border: 2px solid #fff;
+  border-radius: 20px/50px;
+  background-clip: padding-box;
+  text-align: center;
+}
+
+.button {
+  font-size: 1em;
+  padding: 10px;
+  color: #fff;
+  border: 2px solid #2d312f;
+  border-radius: 20px/50px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all 0.3s ease-out;
+}
+.button:hover {
+  background: #b6ab84;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -ms-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1500;
+}
+
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #fff;
+  border-radius: 5px;
+  width: 30%;
+  position: relative;
+  transition: all 1s ease-in-out;
+  -webkit-transition: all 1s ease-in-out;
+  -moz-transition: all 1s ease-in-out;
+  -ms-transition: all 1s ease-in-out;
+  -o-transition: all 1s ease-in-out;
+}
+
+.popup h2 {
+  margin-top: 0;
+  color: #333;
+  font-family: Tahoma, Arial, sans-serif;
+}
+.popup .close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .close:hover {
+  color: #868d89;
+}
+.popup .content {
+  max-height: 30%;
+  overflow: auto;
+}
+
+@media screen and (max-width: 700px) {
+  .box {
+    width: 70%;
   }
-  
-  /* Style the main header */
-  header {
-	background-color: #2c3e50;
-	color: #fff;
-	padding: 20px;
+  .popup {
+    width: 70%;
   }
+}
