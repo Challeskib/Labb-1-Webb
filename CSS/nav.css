@@ -1,3 +1,10 @@
+header {
+  background-color: #352a19;
+  color: #fff;
+  padding: 20px;
+  opacity: 0.85;
+}
+
 /* Style the navigation links */
 nav ul {
   list-style-type: none;
@@ -5,10 +12,11 @@ nav ul {
   padding: 0;
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 nav ul li {
-  margin: 0 10px;
+  margin: 10px;
 }
 
 nav ul li a {
@@ -18,7 +26,12 @@ nav ul li a {
 }
 
 nav ul li a.active {
-  color: #f00; /* set the color of the active link */
+  color: rgb(172, 93, 4); /* set the color of the active link */
   font-weight: bold; /* set the font weight of the active link */
-  text-decoration: underline; /* add an underline to the active link */
+}
+
+@media (max-width: 767px) {
+  nav {
+    flex-direction: column;
+  }
 }
