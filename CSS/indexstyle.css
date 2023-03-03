@@ -3,13 +3,13 @@
 /* Style the main content section */
 main {
   max-width: 960px;
-  margin: 0 auto;
-  padding: 20px;
+  margin-top: 1%;
+  padding: 1%;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  align-items: center; /* align items  */
-  justify-content: center; /* horizontally center items */
+  align-items: center;
+  justify-content: center;
 }
 
 /* Style the profile picture */
@@ -18,12 +18,13 @@ img {
   border-radius: 50%;
   margin: 100px 0;
   flex-shrink: 0;
+  display: inline-flex;
 }
 
 /* Style the quote section */
 .quote {
   width: 100%;
-  margin-top: 20px;
+  margin-top: 1%;
   flex-grow: 1; /* make the quote section fill remaining space */
 }
 
@@ -31,7 +32,7 @@ img {
   font-size: 24px;
   font-style: italic;
   text-align: center;
-  margin: 0; /* remove default margin for paragraphs */
+  margin: 1%; /* remove default margin for paragraphs */
 }
 
 /* Add responsive styles for mobile devices */
