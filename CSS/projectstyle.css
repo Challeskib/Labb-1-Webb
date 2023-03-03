@@ -22,6 +22,7 @@ main li {
 
 .box {
   width: 40%;
+  height: 40%;
   margin: 0 auto;
   background: rgba(255, 255, 255, 0.2);
   padding: 70px;
@@ -32,7 +33,7 @@ main li {
 }
 
 .button {
-  font-size: 1em;
+  font-size: 60%;
   padding: 10px;
   color: #fff;
   border: 2px solid #2d312f;
@@ -111,7 +112,7 @@ main li {
   overflow: auto;
 }
 
-@media screen and (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   .box {
     padding: 30%;
   }

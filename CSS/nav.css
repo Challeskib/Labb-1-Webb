@@ -5,6 +5,10 @@ header {
   opacity: 0.85;
 }
 
+h1 {
+  color: white;
+}
+
 /* Style the navigation links */
 nav ul {
   list-style-type: none;
@@ -30,7 +34,7 @@ nav ul li a.active {
   font-weight: bold; /* set the font weight of the active link */
 }
 
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   nav {
     flex-direction: column;
   }

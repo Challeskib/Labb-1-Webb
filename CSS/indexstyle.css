@@ -15,7 +15,6 @@ main {
 /* Style the profile picture */
 img {
   width: 60%;
-
   border-radius: 50%;
   margin: 100px 0;
   flex-shrink: 0;
@@ -36,7 +35,7 @@ img {
 }
 
 /* Add responsive styles for mobile devices */
-@media (max-width: 767px) {
+@media only screen and (max-width: 767px) {
   main {
     flex-direction: column;
   }
